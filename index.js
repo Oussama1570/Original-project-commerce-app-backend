@@ -12,6 +12,7 @@ const allowedOrigins = process.env.ALLOWED_ORIGINS
   ? process.env.ALLOWED_ORIGINS.split(",")
   : [
     "http://localhost:5173",
+    "https://original-project-commerce-app-frontend.vercel.app",
       
       
     ];
@@ -59,7 +60,7 @@ connectDB();
 
 // ✅ Root route
 app.get("/", (req, res) => {
-  res.send("Wahret Zmen Boutique Server is running!");
+  res.send("Original project e-commerce Server is running!");
 });
 
 app.listen(port, () => {
